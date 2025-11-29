@@ -1,0 +1,31 @@
+{
+  "name": "react-mf-starter",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "concurrently \"npm --prefix apps/container start\" \"npm --prefix apps/home start\" \"npm --prefix apps/profile start\"",
+    "start:container": "npm --prefix apps/container start",
+    "start:home": "npm --prefix apps/home start",
+    "start:profile": "npm --prefix apps/profile start",
+    "build": "npm run build --workspaces",
+    "clean": "rimraf node_modules apps/*/node_modules packages/*/node_modules"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "concurrently": "^9.2.1",
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.0",
+    "rimraf": "^6.1.2",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.4.2",
+    "typescript": "^4.9.5",
+    "webpack": "^5.76.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
