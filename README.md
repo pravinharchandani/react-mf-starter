@@ -53,7 +53,7 @@ react-mf-starter/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/react-mf-starter.git
+git clone https://github.com/pravinharchandani/react-mf-starter.git
 cd react-mf-starter
 ```
 
